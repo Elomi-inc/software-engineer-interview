@@ -35,11 +35,11 @@ if [ "$command" == "install" ]; then
 elif [ "$command" == "test" ]; then
 
   if [ $# -eq $b 2 ]; then
-    docker run -it -v "$(pwd):/app" dorsia/php-interview:latest /app/vendor/bin/phpunit --filter=$2
+    docker run -it -v "./:/app" dorsia/php-interview:latest /app/vendor/bin/phpunit --filter=$2
     exit 0
   fi
 
-  docker run -it -v "$(pwd):/app" dorsia/php-interview:latest /app/vendor/bin/phpunit
+  docker run -it -v "./:/app" dorsia/php-interview:latest /app/vendor/bin/phpunit
 
 else
   echo "Unknown command: $command"
