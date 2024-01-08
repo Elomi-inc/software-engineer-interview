@@ -6,6 +6,8 @@ _Todo - add some background for the assignment_
 
 ## Setup
 
+Depending on your local system, you can elect to set up the project [using locally-installed PHP](#using-php-and-composer) or [using Docker](#using-docker).
+
 ### Using PHP and Composer
 
 If you already have PHP (>8.1) and the latest version of Composer installed on your system, simply install
