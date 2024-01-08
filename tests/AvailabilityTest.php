@@ -13,7 +13,7 @@ class AvailabilityTest extends PHPUnitTestCase
      */
     public function it_provides_availability_on_an_interval()
     {
-        // Given we have an instance of Availability with a start and end time
+        // Given an instance of Availability with a start and end time
         $scheduleBlock = new Availability(start: '2024-01-04 12:00:00', end: '2024-01-04 13:15:00');
 
         // When we fetch the options using a 15-minute interval
@@ -35,7 +35,7 @@ class AvailabilityTest extends PHPUnitTestCase
      */
     public function it_does_not_include_the_end_time_if_it_does_not_fall_on_interval()
     {
-        // Given we have an instance of Availability with an end time that will not fall on the interval requested
+        // Given an instance of Availability with an end time that will not fall on the interval requested
         $scheduleBlock = new Availability(start: '2024-01-04 12:00:00', end: '2024-01-04 13:15:00');
 
         // When we fetch the options using a 30-minute interval
@@ -59,7 +59,7 @@ class AvailabilityTest extends PHPUnitTestCase
      */
     public function it_does_not_include_times_that_are_excluded()
     {
-        // Given we have an instance of Availability with an excluded range
+        // Given an instance of Availability with an excluded range
 
         // When we fetch options using a 15-minute interval
 
