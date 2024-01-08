@@ -2,7 +2,7 @@
 
 ## Background
 
-Dorsia isn't just any platform; we're a members-only haven for food enthusiasts seeking access to the most in-demand restaurant reservations in cities like New York, London, Miami, Los Angeles San Francisco, and beyond. Our mission? To open doors to exceptional dining experiences.
+Dorsia isn't just any platform; we're a members-only haven for food enthusiasts seeking access to the most in-demand restaurant reservations in cities like New York, London, Miami, Los Angeles, San Francisco, and beyond. Our mission? To open doors to exceptional dining experiences.
 
 ### The Role of a Software Engineer at Dorsia
 
