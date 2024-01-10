@@ -40,3 +40,9 @@ using a dockerized version of Composer.
 You can use `./dorsia test` to run all test cases using `phpunit`. If you would like to run a single test,
 pass the test name as a second argument. `./dorsia test it_provides_availability_on_an_interval`
 
+## Ready to go?
+
+Read through the documentation included in `./tests/DailyAvailabilityTest.php` and `./src/DailyAvailability.php` ahead of your interview. 
+During the interview, you and your partner will complete the functionality outlined in the unit tests.
+
+If you are not familiar with PHPUnit, consider familiarizing yourself with the [documentation on their website](https://phpunit.de/documentation.html).
