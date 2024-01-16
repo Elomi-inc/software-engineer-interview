@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Check if exactly one argument is provided
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <command>"
+  exit 1
+fi
+
+# Get the argument
+command=$1
+
+# Check for Docker command
+if ! command -v docker &>/dev/null; then
+  echo "Docker is not installed or not in your PATH."
+  exit 1
+fi
+
+# Perform actions based on the argument
+if [ "$command" == "install" ]; then
+  echo "Setting up the project..."
+  docker run --rm --tty \
+    --volume $PWD:/app \
+    --volume ${COMPOSER_HOME:-$HOME/.composer}:/tmp \
+    composer install
+  docker pull dorsia/php-interview:latest
+
+  if [ $? -ne 0 ]; then
+    echo "Oops, there was a problem with installation!"
+    exit 1
+  fi
+
+  clear
+  echo "Dependencies installed! Let's get to work :)"
+
+elif [ "$command" == "test" ]; then
+
+  if [ $# -eq $b 2 ]; then
+    docker run -it -v "./:/app" dorsia/php-interview:latest /app/vendor/bin/phpunit --filter=$2
+    exit 0
+  fi
+
+  docker run -it -v "./:/app" dorsia/php-interview:latest /app/vendor/bin/phpunit
+
+else
+  echo "Unknown command: $command"
+  exit 1
+fi
