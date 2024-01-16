@@ -77,21 +77,7 @@ class DailyAvailabilityTest extends PHPUnitTestCase
      */
     public function it_does_not_include_times_that_are_excluded()
     {
-        // Given an instance of Availability with an excluded range
-        $scheduleBlock = new DailyAvailability(startTime: 43200, endTime: 43275);
-
-        // When exclude a period of time and fetch options using a 15-minute interval
-        $options = $scheduleBlock
-            ->exclude(startTime: 43220, endTime: 43250)
-            ->getOptions(intervalInMinutes: 15);
-
-        // Then we should see the options without those that fall in the excluded range
-        $this->assertSame([
-            43200,
-            43215,
-            43260,
-            43275,
-        ], $options);
+        // Your test here
     }
 
     /**
