@@ -18,19 +18,19 @@ class DailyAvailabilityTest extends PHPUnitTestCase
     public function it_provides_availability_on_an_interval()
     {
         // Given an instance of DailyAvailability with a start and end time
-        $scheduleBlock = new DailyAvailability(startTime: 43200, endTime: 43275);
+        $scheduleBlock = new DailyAvailability(startTime: 720, endTime: 795);
 
         // When we fetch the options using a 15-minute interval
         $fifteenMinuteOptions = $scheduleBlock->getOptions(intervalInMinutes: 15);
 
         // Then we should be returned a list of available seating options every fifteen minutes
         $this->assertSame([
-            43200,
-            43215,
-            43230,
-            43245,
-            43260,
-            43275,
+            720,
+            735,
+            750,
+            765,
+            780,
+            795,
         ], $fifteenMinuteOptions);
 
         // And when we fetch the options using a 25-minute interval
@@ -38,10 +38,10 @@ class DailyAvailabilityTest extends PHPUnitTestCase
 
         // Then we should be returned a list of available seating options every twenty-five minutes
         $this->assertSame([
-            43200,
-            43225,
-            43250,
-            43275,
+            720,
+            745,
+            770,
+            795,
         ], $twentyFixMinuteOptions);
     }
 
@@ -55,7 +55,7 @@ class DailyAvailabilityTest extends PHPUnitTestCase
     public function it_does_not_include_the_end_time_if_it_does_not_fall_on_interval()
     {
         // Given an instance of DailyAvailability with an end time that will not fall within the interval requested
-        $scheduleBlock = new DailyAvailability(startTime: 43200, endTime: 43275);
+        $scheduleBlock = new DailyAvailability(startTime: 720, endTime: 810);
 
         // When we fetch the options using a 30-minute interval
         $thirtyMinuteOptions = $scheduleBlock->getOptions(intervalInMinutes: 30);
@@ -63,9 +63,9 @@ class DailyAvailabilityTest extends PHPUnitTestCase
         // Then we should not expect to see the end time present in the list of options, because it does not fall
         // on the thirty-minute interval
         $this->assertSame([
-            43200,
-            43230,
-            43260,
+            720,
+            750,
+            780,
         ], $thirtyMinuteOptions);
     }
     
