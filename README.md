@@ -18,6 +18,8 @@ This challenge isn't just theoretical – it's a slice of what we do at Dorsia. 
 
 ## Setup
 
+Ahead of the pair programming interview, clone this repository to your local machine and follow these instructions to get a development environment configured. Plan to use your preferred code editor and share your screen during the pair programming exercise. Do not fork this repository or publish your changes publicly as we will be using this repository for other interviews.
+
 Depending on your local system, you can elect to set up the project [using locally-installed PHP](#setup-using-php-and-composer) or [using Docker](#setup-using-docker).
 
 ### Setup using PHP and Composer
