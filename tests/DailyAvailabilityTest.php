@@ -55,7 +55,7 @@ class DailyAvailabilityTest extends PHPUnitTestCase
     public function it_does_not_include_the_end_time_if_it_does_not_fall_on_interval()
     {
         // Given an instance of DailyAvailability with an end time that will not fall within the interval requested
-        $scheduleBlock = new DailyAvailability(startTime: 720, endTime: 810);
+        $scheduleBlock = new DailyAvailability(startTime: 720, endTime: 800);
 
         // When we fetch the options using a 30-minute interval
         $thirtyMinuteOptions = $scheduleBlock->getOptions(intervalInMinutes: 30);
