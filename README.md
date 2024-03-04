@@ -10,7 +10,7 @@ As a software engineer here, you're the tech hero who keeps our platform running
 
 ### About the Challenge
 
-This challenge is our way of seeing if you've got the right mix of skills. We're talking PHP expertise, a solid grasp of unit testing, and top-notch problem-solving abilities. These are the tools you'll need every day to help us deliver a seamless and top-tier service to our members.
+This challenge is our way of seeing if you've got the right mix of skills. We're talking language expertise, a solid grasp of unit testing, and top-notch problem-solving abilities. These are the tools you'll need every day to help us deliver a seamless and top-tier service to our members.
 
 ### Real-World Impact
 
