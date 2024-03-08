@@ -10,7 +10,7 @@ As a software engineer here, you're the tech hero who keeps our platform running
 
 ### About the Challenge
 
-This challenge is our way of seeing if you've got the right mix of skills. We're talking PHP expertise, a solid grasp of unit testing, and top-notch problem-solving abilities. These are the tools you'll need every day to help us deliver a seamless and top-tier service to our members.
+This challenge is our way of seeing if you've got the right mix of skills. We're talking language expertise, a solid grasp of unit testing, and top-notch problem-solving abilities. These are the tools you'll need every day to help us deliver a seamless and top-tier service to our members.
 
 ### Real-World Impact
 
@@ -18,33 +18,10 @@ This challenge isn't just theoretical – it's a slice of what we do at Dorsia. 
 
 ## Setup
 
-Ahead of the pair programming interview, clone this repository to your local machine and follow these instructions to get a development environment configured. Plan to use your preferred code editor and share your screen during the pair programming exercise. Do not fork this repository or publish your changes publicly as we will be using this repository for other interviews.
+Ahead of the pair programming interview, clone this repository to your local machine and follow these instructions for the language you are using (PHP or Typescript) to
+get a development environment configured. Plan to use your preferred code editor and share your screen during the
+pair programming exercise. Do not fork this repository or publish your changes publicly as we will be using this
+repository for other interviews.
 
-Depending on your local system, you can elect to set up the project [using locally-installed PHP](#setup-using-php-and-composer) or [using Docker](#setup-using-docker).
-
-### Setup using PHP and Composer
-
-If you already have PHP (>8.1) and the latest version of Composer installed on your system, simply install
-dependencies with `composer install` and run your tests with `./vendor/bin/phpunit`.
-
-### Setup using Docker
-
-If you do not have PHP 8.1 and Composer 2 installed on your system, the easiest route is to use the included `dorsia` 
-command line tool to install the necessary dependencies and run your tests with `phpunit`.
-
-#### Install dependencies
-
-Run `./dorsia install` to pull the required images from Docker Hub and install the necessary PHP dependencies 
-using a dockerized version of Composer.
-
-#### Run tests
-
-You can use `./dorsia test` to run all test cases using `phpunit`. If you would like to run a single test,
-pass the test name as a second argument. `./dorsia test it_provides_availability_on_an_interval`
-
-## Ready to go?
-
-Read through the documentation included in `./tests/DailyAvailabilityTest.php` and `./src/DailyAvailability.php` ahead of your interview. 
-During the interview, you and your partner will complete the functionality outlined in the unit tests.
-
-If you are not familiar with PHPUnit, consider familiarizing yourself with the [documentation on their website](https://phpunit.de/documentation.html).
+- [PHP setup](php/README.md)
+- [Typescript setup](ts/README.md)

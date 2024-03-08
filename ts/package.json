@@ -1,0 +1,17 @@
+{
+  "name": "swe-interview",
+  "version": "1.0.0",
+  "description": "Dorsia software engineer interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}
